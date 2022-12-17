@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+section{
+    padding-top: 80px;
+}
+.profile{
+    background: linear-gradient(rgba(0, 100, 255, 0.5), rgba(255,255,255,.5)), url('../images/backpiece.png');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    text-shadow: 2px 2px #000;
+    font-size: xx-large;
+    color: #ffff;
+}
+.nav-title{
+    color: #FF8C00;
+}
+
+.image{
+    display: block;
+    width: 100%;
+    min-height:100px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background:  linear-gradient( rgba(0, 100, 255, 0.5), rgba(255,255,255,.5));
+}
+
+.title{
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btncap{
+    font-size: 2rem;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #8dee0f;
+}
+
+.thumbnail{
+    transform: translate(-4px);
+    margin-bottom: 10px;
+}
+
+.img-container:hover .overlay{
+    opacity: 1;
+    height: 100%;
+}
+.modal-top{
+    /* background: linear-gradient(rgba(255,255,255,.5),  rgba(0, 100, 255, 0.5)); */
+    background: rgba(0, 100, 255, 0.5);
+}
+.modal-body{
+    background: linear-gradient( rgba(0, 100, 255, 0.5), rgba(255,255,255,.5));
+    /* background: linear-gradient(rgba(255,255,255,.5),  rgba(0, 100, 255, 0.5)); */
+}
